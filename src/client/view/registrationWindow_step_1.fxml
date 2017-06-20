@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.RegistrationWindowControllerOne">
+   <children>
+      <Hyperlink fx:id="backHprLnk" layoutX="14.0" layoutY="15.0" onAction="#backHprLnkClickHandle" text="Назад" />
+      <Label layoutX="158.0" layoutY="54.0" text="Ваше ФИО и дата рождения">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastNameTF" layoutX="226.0" layoutY="103.0" promptText="Фамилия" />
+      <TextField fx:id="firstNameTF" layoutX="226.0" layoutY="130.0" promptText="Имя" />
+      <TextField fx:id="secondNameTF" layoutX="226.0" layoutY="157.0" promptText="Отчество" />
+      <Hyperlink fx:id="nextHprLnk" layoutX="535.0" layoutY="15.0" onAction="#nextHprLnkClickHandle" text="Дальше" />
+      <DatePicker fx:id="birthDateDP" layoutX="226.0" layoutY="184.0" prefHeight="25.0" prefWidth="149.0" promptText="Дата рождения" />
+      <Label fx:id="messageTF" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="86.0" prefHeight="17.0" prefWidth="500.0" />
+   </children>
+</Pane>

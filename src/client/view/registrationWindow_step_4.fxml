@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.RegistrationWindowControllerFour">
+   <children>
+      <Label layoutX="148.0" layoutY="39.0" text="Регистрация прошла успешно">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="signInHprLnk" layoutX="14.0" layoutY="14.0" onAction="#signInHprLnkClickHandle" text="Войти" />
+      <Label layoutX="208.0" layoutY="84.0" text="Ваш уникальный идентификатор:" />
+      <Label fx:id="userGuidTF" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="110.0" prefWidth="500.0" />
+      <Label layoutX="187.0" layoutY="127.0" text="Он нам нужен для идентификации вас в системе">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.UserProfileWindowController">
+   <children>
+      <Label layoutX="14.0" layoutY="323.0" text="Идентификатор сессии:" />
+      <Label layoutX="14.0" layoutY="340.0" text="Пользователь:" />
+      <Hyperlink fx:id="signOutHprLnk" layoutX="14.0" layoutY="14.0" onAction="#signOutHprLnkClickHandle" text="Выйти из аккаунта" />
+      <Hyperlink fx:id="userHprLnk" layoutX="93.0" layoutY="337.0" onAction="#userHprLnkClickHandle" />
+      <Hyperlink fx:id="sessionIdHprLnk" layoutX="144.0" layoutY="320.0" onAction="#sessionIdHprLnkClickHandle" />
+      <Label layoutX="14.0" layoutY="366.0" text="Курс валют:" />
+      <Hyperlink fx:id="exchangeRateHrpLnk" layoutX="79.0" layoutY="363.0" onAction="#exchangeRateHrpLnkClickHandle" />
+      <Label fx:id="messageTF" alignment="CENTER" contentDisplay="CENTER" layoutY="37.0" prefWidth="600.0" />
+      <Hyperlink fx:id="myFinancesHprLnk" layoutX="64.0" layoutY="152.0" onAction="#myFinancesHprLnkClickHandle" text="Мои финансы">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="bankAccountsHprLnk" layoutX="357.0" layoutY="152.0" onAction="#bankAccountsHprLnkClickHandle" text="Вклады/счета">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</Pane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.RegistrationWindowControllerTwo">
+   <children>
+      <Hyperlink fx:id="backHprLnk" layoutX="14.0" layoutY="14.0" onAction="#backHprLnkClickHandle" text="Назад" />
+      <Hyperlink fx:id="nextHprLnk" layoutX="535.0" layoutY="14.0" onAction="#nextHprLnkClickHandle" text="Дальше" />
+      <Label layoutX="138.0" layoutY="54.0" text="Придумайте себе логин, пароль">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginTF" layoutX="226.0" layoutY="103.0" promptText="Логин" />
+      <PasswordField fx:id="passwordPF" layoutX="226.0" layoutY="132.0" promptText="Пароль" />
+      <Label fx:id="messageTF" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="86.0" prefWidth="500.0" textAlignment="CENTER" />
+      <PasswordField fx:id="passwordRepeatTF" layoutX="226.0" layoutY="160.0" promptText="Повторите пароль" />
+   </children>
+</Pane>

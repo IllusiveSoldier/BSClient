@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.SuccessCreateCardWindowController">
+   <children>
+      <Label layoutX="169.0" layoutY="44.0" text="Банковская карта успешно создана">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="79.0" text="Уникальный идентификатор карты:" />
+      <Label fx:id="cardGuidLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="104.0" prefWidth="572.0" />
+      <Label layoutX="128.0" layoutY="126.0" text="Он необходим для осущестлвения переводов и идентификации в системе">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="goToBankAccountWindowHprLnk" layoutX="14.0" layoutY="14.0" onAction="#goToBankAccountWindowHprLnkClickHandle" text="Перейти в профиль" />
+   </children>
+</Pane>

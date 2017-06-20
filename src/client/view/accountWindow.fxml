@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.AccountWindowController">
+   <children>
+      <Hyperlink fx:id="backHprLnk" layoutX="14.0" layoutY="14.0" onAction="#backHprLnkClickHandle" text="Назад" />
+      <Label layoutX="14.0" layoutY="169.0" text="© BSCore, 2017" />
+      <Label layoutX="436.0" layoutY="13.0" text="Банковский депозит">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="bankAccountGuid" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="330.0" layoutY="169.0" onMouseClicked="#bankAccountGuidClickHandle" prefHeight="17.0" prefWidth="255.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="49.0" text="Операции:">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="beginTransactionHprLnk" layoutX="14.0" layoutY="64.0" onAction="#beginTransactionHprLnkClickHandle" text="Осуществить транзакцию" />
+      <Hyperlink fx:id="closeDepositHprLnk" layoutX="14.0" layoutY="87.0" onAction="#closeDepositHprLnkClickHandle" text="Закрыть депозит" />
+      <Label layoutX="18.0" layoutY="110.0" text="Держатель депозита:">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="depositName" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="325.0" layoutY="41.0" prefHeight="15.0" prefWidth="255.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="483.0" layoutY="57.0" text="Депозит действителен">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="depositBeginDateLbl" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="482.0" layoutY="79.0" prefHeight="17.0" prefWidth="103.0" />
+      <Label layoutX="474.0" layoutY="80.0" text="С">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="464.0" layoutY="102.0" text="ПО" />
+      <Label fx:id="depositEndDateLbl" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="482.0" layoutY="102.0" prefHeight="17.0" prefWidth="103.0" />
+      <Label fx:id="bufferInfoLbl" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="471.0" layoutY="156.0" text="Нажмите для копирования">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="depositHolderHprLnk" layoutX="14.0" layoutY="125.0" onAction="#depositHolderHprLnkClickHandle" />
+      <Label fx:id="valueLbl" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="436.0" layoutY="35.0" prefHeight="17.0" prefWidth="149.0" />
+      <Hyperlink fx:id="updateAccountInfoHprLnk" layoutX="56.0" layoutY="14.0" onAction="#updateAccountInfoHprLnkClickHandle" text="Обновить информацию" />
+   </children>
+</Pane>

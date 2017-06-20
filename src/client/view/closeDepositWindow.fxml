@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.CloseDepositWindowController">
+   <children>
+      <Hyperlink fx:id="backHprLnk" layoutX="14.0" layoutY="14.0" onAction="#backHprLnkClickHandle" text="Назад" />
+      <Label layoutX="14.0" layoutY="169.0" text="© BSCore, 2017" />
+      <Label layoutX="347.0" layoutY="13.0" text="Закрытие банковского депозита">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label ellipsisString="" layoutX="18.0" layoutY="42.0" prefHeight="63.0" prefWidth="548.0" text="Внимание! Процесс закрытия банковского депозита проивзодит удаление объекта из системы. Данная операция необратима. В случае, если вы всё-таки закрыли банковский депозит - обратитесь в службу поддержки по адресу bankingsystembot@gmail.com" wrapText="true" />
+      <Label ellipsisString="" layoutX="308.0" layoutY="154.0" prefHeight="31.0" prefWidth="278.0" text="Закрывая депозит вы соглашаетесь с условиями выше. С уважением, Служба поддержки системы Banking System ©." wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="acceptHprLnk" layoutX="311.0" layoutY="131.0" onAction="#acceptHprLnkClickHandle" text="Я соглашаюсь с условиями и закрываю депозит" />
+      <Label layoutX="18.0" layoutY="105.0" text="Перевести остаток на этот счёт:">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bsCardGuidTF" layoutX="170.0" layoutY="100.0" prefHeight="25.0" prefWidth="273.0" promptText="GUID кредитной карты" />
+      <Label fx:id="isSendingLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="447.0" layoutY="104.0" prefHeight="17.0" prefWidth="145.0" />
+   </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.RegistrationWindowControllerThree">
+   <children>
+      <Hyperlink fx:id="backHprLnk" layoutX="14.0" layoutY="14.0" onAction="#backHprLnkClickHandle" text="Назад" />
+      <Hyperlink fx:id="completeHprLnk" layoutX="518.0" layoutY="14.0" onAction="#completeHprLnkClickHandle" text="Завершить" />
+      <Label layoutX="77.0" layoutY="54.0" prefHeight="85.0" prefWidth="447.0" text="Введите адрес эл. почты, если хотите получать уведомления" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTF" layoutX="226.0" layoutY="139.0" promptText="Адрес эл. почты" />
+      <Label fx:id="messageTF" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="164.0" prefWidth="500.0" />
+   </children>
+</Pane>

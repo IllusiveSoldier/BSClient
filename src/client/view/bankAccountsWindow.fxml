@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.BankAccountsWindowController">
+   <children>
+      <Hyperlink fx:id="backHprLnk" layoutX="14.0" layoutY="14.0" onAction="#backHprLnkClickHandle" text="Назад" />
+      <Label layoutX="229.0" layoutY="37.0" text="Ваши депозиты">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="bankAccountsListView" layoutX="14.0" layoutY="77.0" prefHeight="106.0" prefWidth="572.0" />
+      <Label layoutX="14.0" layoutY="369.0" text="Пользователь:" />
+      <Label fx:id="userInfoLbl" layoutX="103.0" layoutY="369.0" prefHeight="17.0" prefWidth="483.0" />
+      <Hyperlink fx:id="createBankAccountHprLnk" layoutX="14.0" layoutY="334.0" onAction="#createBankAccountHprLnkClickHandle" text="Создать вклад" />
+      <Hyperlink fx:id="showStatisticAboutDeposits" layoutX="335.0" layoutY="334.0" onAction="#showStatisticAboutDepositsClickHandle" text="Показать статистику по дипозитам и картам" />
+      <Hyperlink fx:id="createCardHprLnk" layoutX="114.0" layoutY="334.0" onAction="#createCardHprLnkClickHandle" text="Создать счёт" />
+      <Label layoutX="245.0" layoutY="194.0" text="Ваши карты">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="cardsListView" layoutX="14.0" layoutY="230.0" prefHeight="106.0" prefWidth="572.0" />
+   </children>
+</Pane>
